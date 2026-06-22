@@ -7,7 +7,7 @@ import (
 )
 
 func openDB() (*sql.DB, error) {
-	return sql.Open("sqlite", "./gratitude_list.db")
+	return sql.Open("sqlite", "/data/gratitude_list.db")
 }
 
 func CreateListItemsTable(db *sql.DB) error {
