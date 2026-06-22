@@ -1,0 +1,23 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Containerfile
+    image: gratitude-backend:latest
+    volumes:
+      - gratitude-data:/data
+    expose:
+      - "8888"
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Containerfile
+    image: gratitude-frontend:latest
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+
+volumes:
+  gratitude-data:
