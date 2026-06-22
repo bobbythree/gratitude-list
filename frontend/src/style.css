@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(180, 50%, 85%);
+     font-family: sans-serif;
+}
+
+header {
+   text-align: center;
+   font-size: 32px;
+   color: steelblue;
+   margin-top: 3rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+label {
+  font-size: 24px;
+  color: darkgreen;
+}
+
+#user-input {
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#submit-btn {
+  display: none;
+}
+
+#list-div {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  color: darkgreen;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  min-width: 300px;
+  margin-bottom: 0.5rem;
+}
