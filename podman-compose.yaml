@@ -4,6 +4,8 @@ services:
       context: ./backend
       dockerfile: Containerfile
     image: gratitude-backend:latest
+    env_file:
+      - ./backend/.env.production
     volumes:
       - gratitude-data:/data
     expose:
