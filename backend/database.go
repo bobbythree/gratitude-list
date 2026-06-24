@@ -2,12 +2,20 @@ package main
 
 import (
 	"database/sql"
+	"fmt"
+	"os"
 
 	_ "modernc.org/sqlite"
 )
 
 func openDB() (*sql.DB, error) {
-	return sql.Open("sqlite", "/data/gratitude_list.db")
+	dbPath := os.Getenv("DB_PATH")
+
+	if dbPath == "" {
+		return nil, fmt.Errorf("DB_PATH is not set")
+	}
+
+	return sql.Open("sqlite", dbPath)
 }
 
 func CreateListItemsTable(db *sql.DB) error {
