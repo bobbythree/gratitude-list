@@ -27,7 +27,8 @@ pnpm-debug.log*
 
 # environment / secrets
 .env
-.env.*
+!.env.development
+!.env.production
 !.env.example
 
 # local container/runtime data

@@ -3,9 +3,25 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"os"
+
+	"github.com/joho/godotenv"
 )
 
 func main() {
+	// set up environments
+	appEnv := os.Getenv("APP_ENV")
+	if appEnv == "" {
+		appEnv = "development"
+	}
+
+	if appEnv == "development" {
+		err := godotenv.Load(".env.development")
+		if err != nil {
+			panic(err)
+		}
+	}
+
 	// database
 	db, err := openDB()
 	if err != nil {

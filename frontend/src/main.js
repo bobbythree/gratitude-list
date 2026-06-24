@@ -11,7 +11,7 @@ window.addEventListener("load", () => {
 
 // get req
 async function loadItems() {
-  const response = await fetch("http://localhost:8888/list");
+  const response = await fetch("/api/list");
   const items = await response.json();
 
   listUL.innerHTML = "";
@@ -24,7 +24,7 @@ async function loadItems() {
     deleteBtn.textContent = "delete";
     deleteBtn.style.padding = "0.25rem 0.5rem"
     deleteBtn.addEventListener("click", async () => {
-      await fetch(`http://localhost:8888/list?id=${item.id}`, {
+      await fetch(`/api/list?id=${item.id}`, {
         method: "DELETE",
       });
 
@@ -44,7 +44,7 @@ form.addEventListener("submit", async (e) => {
   console.log(value);
 
   // post req
-  const url = "http://localhost:8888/list"
+  const url = "/api/list"
   const payload = { item: value }
   try {
     const response = await fetch(url, {

@@ -1,0 +1,14 @@
+frontend/node_modules
+frontend/dist
+
+.git
+.gitignore
+
+*.db
+*.db-shm
+*.db-wal
+
+backend/gratitude-list
+
+.vscode
+.idea
