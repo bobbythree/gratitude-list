@@ -3,9 +3,17 @@ package main
 import (
 	"fmt"
 	"net/http"
+
+	"github.com/joho/godotenv"
 )
 
 func main() {
+	// load env file
+	err := godotenv.Load(".env.development")
+	if err != nil {
+		panic(err)
+	}
+
 	// database
 	db, err := openDB()
 	if err != nil {
