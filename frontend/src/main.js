@@ -21,8 +21,9 @@ async function loadItems() {
     li.textContent = item.item;
 
     const deleteBtn = document.createElement("button");
-    deleteBtn.textContent = "delete";
-    deleteBtn.style.padding = "0.25rem 0.5rem"
+    deleteBtn.textContent = "X";
+    deleteBtn.id = "delete-btn"
+
     deleteBtn.addEventListener("click", async () => {
       await fetch(`/api/list?id=${item.id}`, {
         method: "DELETE",

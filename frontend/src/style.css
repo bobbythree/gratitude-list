@@ -5,14 +5,15 @@
 }
 
 body {
-  background-color: hsl(180, 50%, 85%);
-     font-family: sans-serif;
+  background: linear-gradient(to bottom, #270204, #570204);
+  font-family: sans-serif;
+  height: 100vh;
 }
 
 header {
    text-align: center;
    font-size: 32px;
-   color: steelblue;
+   color: #fdbf03;
    margin-top: 3rem;
 }
 
@@ -27,13 +28,21 @@ form {
 
 label {
   font-size: 24px;
-  color: darkgreen;
+  color: #FE9403;
 }
 
 #user-input {
   padding: 0.5rem 1rem;
   font-size: 16px;
   border-radius: 5px;
+  background-color: black;
+  color: antiquewhite;
+  border: 1px solid #FE9403 ;
+}
+
+#user-input:focus {
+    outline: 2px solid #fdbf03;
+
 }
 
 #submit-btn {
@@ -52,8 +61,9 @@ ul {
 }
 
 li {
-  color: darkgreen;
+  color: #FE9403;
   font-size: 18px;
+  font-weight: bold;
 
   display: flex;
   justify-content: space-between;
@@ -62,4 +72,18 @@ li {
 
   min-width: 300px;
   margin-bottom: 0.5rem;
+}
+
+#delete-btn {
+  background-color: #FE9403;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  font-size: 10px;
+  font-weight: bold;
+    &:hover{
+      background-color: #fdbf03;
+      transition: 0.3s;
+      cursor: pointer;
+    }
 }
