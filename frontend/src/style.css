@@ -5,7 +5,7 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #270204, #570204);
+  background: #f6f5f3;
   font-family: sans-serif;
   height: 100vh;
 }
@@ -13,7 +13,7 @@ body {
 header {
    text-align: center;
    font-size: 32px;
-   color: #fdbf03;
+   color: #3d3d3f;
    margin-top: 3rem;
 }
 
@@ -28,20 +28,20 @@ form {
 
 label {
   font-size: 24px;
-  color: #FE9403;
+  color: steelblue;
 }
 
 #user-input {
   padding: 0.5rem 1rem;
   font-size: 16px;
   border-radius: 5px;
-  background-color: black;
-  color: antiquewhite;
-  border: 1px solid #FE9403 ;
+  background-color: #f6f5f3;
+  color: #3d3d3f;
+  border: 1px solid #3d3d3f ;
 }
 
 #user-input:focus {
-    outline: 2px solid #fdbf03;
+    outline: 2px solid skyblue;
 
 }
 
@@ -61,7 +61,7 @@ ul {
 }
 
 li {
-  color: #FE9403;
+  color: #7dce94;
   font-size: 18px;
   font-weight: bold;
 
@@ -75,14 +75,15 @@ li {
 }
 
 #delete-btn {
-  background-color: #FE9403;
+  background-color: lightblue;
+  color: #3d3d3f;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
   border: none;
   font-size: 10px;
   font-weight: bold;
     &:hover{
-      background-color: #fdbf03;
+      background-color: #7dce94;
       transition: 0.3s;
       cursor: pointer;
     }
