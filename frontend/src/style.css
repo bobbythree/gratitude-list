@@ -13,7 +13,7 @@ body {
 header {
    text-align: center;
    font-size: 32px;
-   color: #3d3d3f;
+   color: steelblue;
    margin-top: 8rem;
 }
 
@@ -28,7 +28,8 @@ form {
 
 label {
   font-size: 24px;
-  color: steelblue;
+  color: #00a86b;
+  font-weight: bold;
 }
 
 #user-input {
@@ -37,7 +38,7 @@ label {
   border-radius: 5px;
   background-color: #f6f5f3;
   color: #3d3d3f;
-  border: 1px solid #3d3d3f ;
+  border: 1px solid steelblue;
 }
 
 #user-input:focus {
@@ -61,7 +62,7 @@ ul {
 }
 
 li {
-  color: #7dce94;
+  color: #00a86b;
   font-size: 18px;
   font-weight: bold;
 
@@ -75,15 +76,15 @@ li {
 }
 
 #delete-btn {
-  background-color: lightblue;
-  color: #3d3d3f;
+  background-color: #f6f5f3;
+  color: steelblue;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
   border: none;
   font-size: 10px;
   font-weight: bold;
     &:hover{
-      background-color: #7dce94;
+      color: darkred;
       transition: 0.3s;
       cursor: pointer;
     }
