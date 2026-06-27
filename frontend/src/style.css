@@ -78,10 +78,8 @@ li {
 #delete-btn {
   background-color: #f6f5f3;
   color: steelblue;
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
   border: none;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: bold;
     &:hover{
       color: darkred;
