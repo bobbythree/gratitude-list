@@ -8,6 +8,7 @@ body {
   background: #f6f5f3;
   font-family: sans-serif;
   height: 100vh;
+  padding: 0 5rem;
 }
 
 header {
@@ -28,6 +29,7 @@ form {
 
 label {
   font-size: 24px;
+  text-align: center;
   color: #00a86b;
   font-weight: bold;
 }
@@ -86,4 +88,24 @@ li {
       transition: 0.3s;
       cursor: pointer;
     }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0 2rem
+  }
+
+  header {
+    margin-top: 3rem;
+    font-size: 20px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  li {
+    min-width: 200px;
+    font-size: 16px;
+  }
 }
